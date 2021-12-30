@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  box-sizing: border-box;
+  min-height:100vh;
+  font-size:62.5%;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  background-color: rgb(71, 160, 195, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.quiz{
+  width:40vw;
+  min-height:55vh;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.4); 
+}
+.title{
+  border-bottom: 1px solid #464646;
+  color:#464646;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 2.4em;
+  font-weight: 600;
+
+}
+.question-count{
+  font-size:1.6em;
+  font-weight:400;;
+  margin: 10px 0px;
+}
+.question-section{
+  background-color: #594a76;
+  color:#fff;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  font-size:1.7em;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.answer-section{
+  margin:30px 0px;
+}
+.show-answer{
+  cursor:pointer;
+  font-size: 1.3em;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  cursor: pointer;
+  outline: none;
+  display: block;
+  border: none;
+  margin:auto;
+  border-radius: 20px;
+  background-color: #66b3ff;
+  padding: 10px 15px;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+button:hover{
+  /* transform: scale(1.08); */
+  background-color: #167fe9;
+}
+
+.show-score{
+  display:none;
+  place-items: center;
+  font-size:1.8em;
+  grid-gap:30px;
+  margin: auto;
+  padding:20px;
+  border: 0.5px solid grey;
+  margin: 10px 0px;
 }
